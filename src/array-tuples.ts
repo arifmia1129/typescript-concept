@@ -1,0 +1,4 @@
+// array
+const names:string[] = ["Binu", "Arif"];
+const age:number[] = [21, 22];
+const person:(string|number|boolean)[] =["Arif",112864, true];
