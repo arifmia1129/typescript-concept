@@ -2,6 +2,10 @@
 const names1:string[] = ["Arif", "Binu"];
 const names2:string[] = ["Nazrul", "Nurani"];
 
+const [name1, name2] = names1;
+
+console.log(name1, name2);
+
 names1.push(...names2);
 
 console.log(names1);
