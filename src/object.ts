@@ -9,3 +9,5 @@ const user:{
     age:22,
     sex:"Male"
 }
+
+const {id, sex} = user;
