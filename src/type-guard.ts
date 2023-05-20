@@ -39,3 +39,43 @@ const personInfo1:JobHolder = {
 }
 
 checkInfo(personInfo1);
+
+
+class C1 {
+    position:string;
+
+    constructor(position:string){
+        this.position = position;
+    }
+
+    showPosition() {
+        console.log(`Position is: ${this.position}`);
+        
+    }
+}
+
+class C2 extends C1 {
+    salary:number;
+
+    constructor(position:string, salary:number) {
+        super(position);
+        this.salary = salary;
+    }
+
+    showPositionWithSalary() {
+        console.log(`Position: ${this.position}, Salary: ${this.salary}`);
+        
+    }
+}
+
+const i1 = new C1("Developer");
+const i2 = new C2("Developer", 1000000);
+
+
+function checkInstance (param:any) {
+    if(param instanceof C1){
+        param.showPosition();
+    } else if(param instanceof C2){
+        param.showPositionWithSalary;
+    }
+}
