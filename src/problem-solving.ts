@@ -11,17 +11,41 @@
 
 // 2.Define an interface called Person that has the following properties: name (string), age (number), and email (string). Create an object based on this interface and print out its properties.
 
-interface Person{
-    name:string;
-    age:number;
-    email:string
-}
+// interface Person{
+//     name:string;
+//     age:number;
+//     email:string
+// }
 
-const person = {
-    name:"Arif",
-    age:21,
-    email:"arif.vtti@gmail.com"
-}
+// const person = {
+//     name:"Arif",
+//     age:21,
+//     email:"arif.vtti@gmail.com"
+// }
 
-console.log(person);
+// console.log(person);
+
+
+// 3. Write a function called calculateArea that takes the length and width of a rectangle as parameters and returns its area. Define the types for the input parameters and return value.
+
+// function calculateArea (length:number, width:number):number{
+//     return length * width;
+// }
+
+// console.log(calculateArea(2, 3));
+
+
+// 4. Implement a generic function called reverseArray that takes an array of any type and returns the reversed version of the array. Test it with different types of arrays (e.g., numbers, strings) to ensure it works correctly.
+
+const reverseArr =<T> (arr:T[]):T[] => {
+    let newArr = [];
+    for(let i = arr.length-1; i >= 0; i--){
+        newArr.push(arr[i]);
+    }
+    return newArr;
+} 
+
+
+console.log(reverseArr(["arif", "binu"]));
+
 
