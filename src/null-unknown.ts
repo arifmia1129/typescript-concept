@@ -1,22 +1,22 @@
-// null
-const searchUserByName = (name:string | null) =>{
-    if(name === null) {
-        console.log("Nothing for search!");
-    } else{
-        console.log(`Search by name is: ${name}`);
-    }
-}
+// // null
+// const searchUserByName = (name:string | null) =>{
+//     if(name === null) {
+//         console.log("Nothing for search!");
+//     } else{
+//         console.log(`Search by name is: ${name}`);
+//     }
+// }
 
-// searchUserByName("Arif");
+// // searchUserByName("Arif");
 
 
-// unknown
-const guessSomething = (guess:unknown)=>{
-    console.log(guess);
-}
+// // unknown
+// const guessSomething = (guess:unknown)=>{
+//     console.log(guess);
+// }
 
-guessSomething("Arif");
-guessSomething(123);
-guessSomething(null);
-guessSomething(undefined);
-guessSomething(true);
+// guessSomething("Arif");
+// guessSomething(123);
+// guessSomething(null);
+// guessSomething(undefined);
+// guessSomething(true);

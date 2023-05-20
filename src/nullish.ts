@@ -1,3 +1,3 @@
-const user1:unknown = null;
+// const user1:unknown = null;
 
-console.log(user1 ?? "No user")
+// console.log(user1 ?? "No user")
