@@ -51,41 +51,55 @@
 
 // 5. Create a generic interface called Repository that represents a generic data repository. It should have methods like getAll, getById, create, update, and delete. Define the types for the methods and create a class that implements this interface.
 
-interface IRepository<T, U, X, Y,Z> {
-    getAll():T;
-    getById():U;
-    create():X;
-    update():Y;
-    delete():Z;
+// interface IRepository<T, U, X, Y,Z> {
+//     getAll():T;
+//     getById():U;
+//     create():X;
+//     update():Y;
+//     delete():Z;
+// }
+
+
+// class RestApi implements IRepository<Array<object>, object, object, object, object> {
+//     getAll(){
+//         return [
+//             {name:"Arif"}
+//         ]
+//     };
+//     getById():object{
+//         return {
+//             success:true
+//         }
+//     };
+//     create():object{
+//         return {
+//             success:true
+//         }
+//     };
+//     update():object{
+//         return {
+//             success:true
+//         }
+//     };
+//     delete():object{
+//         return {
+//             success:true
+//         }
+//     };
+// }
+
+
+
+//6. Define a type alias called Coordinates that represents the latitude and longitude of a location. It should be an object with latitude and longitude properties, both of which are numbers. Create a variable of type Coordinates and assign some sample values to it.
+
+type Coordinates = {
+    latitude:number;
+    longitude:number;
 }
 
-
-class RestApi implements IRepository<Array<object>, object, object, object, object> {
-    getAll(){
-        return [
-            {name:"Arif"}
-        ]
-    };
-    getById():object{
-        return {
-            success:true
-        }
-    };
-    create():object{
-        return {
-            success:true
-        }
-    };
-    update():object{
-        return {
-            success:true
-        }
-    };
-    delete():object{
-        return {
-            success:true
-        }
-    };
+const location1:Coordinates = {
+    latitude:12233.99,
+    longitude:2293933.33
 }
 
 
