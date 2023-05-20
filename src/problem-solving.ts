@@ -92,14 +92,25 @@
 
 //6. Define a type alias called Coordinates that represents the latitude and longitude of a location. It should be an object with latitude and longitude properties, both of which are numbers. Create a variable of type Coordinates and assign some sample values to it.
 
-type Coordinates = {
-    latitude:number;
-    longitude:number;
+// type Coordinates = {
+//     latitude:number;
+//     longitude:number;
+// }
+
+// const location1:Coordinates = {
+//     latitude:12233.99,
+//     longitude:2293933.33
+// }
+
+
+// 7.Define an enum called Color with values representing different colors (e.g., Red, Green, Blue). Create a function that takes a Color value as input and prints out a corresponding message (e.g., "You selected Red").
+
+type Color = "Red" | "Green" | "Blue";
+
+function checkColor(color:Color) {
+    console.log(`Your selected color is: ${color}`);
 }
 
-const location1:Coordinates = {
-    latitude:12233.99,
-    longitude:2293933.33
-}
+checkColor("Red");
 
 
