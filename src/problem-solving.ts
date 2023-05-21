@@ -8,7 +8,6 @@
 
 // console.log(sumOfArr([1, 2, 3]));
 
-
 // 2.Define an interface called Person that has the following properties: name (string), age (number), and email (string). Create an object based on this interface and print out its properties.
 
 // interface IPerson{
@@ -25,7 +24,6 @@
 
 // console.log(person);
 
-
 // 3. Write a function called calculateArea that takes the length and width of a rectangle as parameters and returns its area. Define the types for the input parameters and return value.
 
 // function calculateArea (length:number, width:number):number{
@@ -33,7 +31,6 @@
 // }
 
 // console.log(calculateArea(2, 3));
-
 
 // 4. Implement a generic function called reverseArray that takes an array of any type and returns the reversed version of the array. Test it with different types of arrays (e.g., numbers, strings) to ensure it works correctly.
 
@@ -43,11 +40,9 @@
 //         newArr.push(arr[i]);
 //     }
 //     return newArr;
-// } 
-
+// }
 
 // console.log(reverseArr(["arif", "binu"]));
-
 
 // 5. Create a generic interface called Repository that represents a generic data repository. It should have methods like getAll, getById, create, update, and delete. Define the types for the methods and create a class that implements this interface.
 
@@ -58,7 +53,6 @@
 //     update():Y;
 //     delete():Z;
 // }
-
 
 // class RestApi implements IRepository<Array<object>, object, object, object, object> {
 //     getAll(){
@@ -88,8 +82,6 @@
 //     };
 // }
 
-
-
 //6. Define a type alias called Coordinates that represents the latitude and longitude of a location. It should be an object with latitude and longitude properties, both of which are numbers. Create a variable of type Coordinates and assign some sample values to it.
 
 // type Coordinates = {
@@ -101,7 +93,6 @@
 //     latitude:12233.99,
 //     longitude:2293933.33
 // }
-
 
 // 7.Define an enum called Color with values representing different colors (e.g., Red, Green, Blue). Create a function that takes a Color value as input and prints out a corresponding message (e.g., "You selected Red").
 
@@ -157,8 +148,6 @@
 
 // console.log(combineInfo(carInfo, driverInfo));
 
-
-
 // 10. Create a function that takes a parameter which can be either a string or an array of strings. If it's a string, return the uppercase version of the string. If it's an array of strings, return an array with each string in uppercase.
 
 // const makeUppercase = (param:string | Array<string>):string | string[] => {
@@ -171,16 +160,13 @@
 // console.log(makeUppercase("Hello"));
 // console.log(makeUppercase(["Hello", "World"]));
 
-
 // 11. Declare a variable with an initial value of null and type it as string. Use type assertion to assign a string value to this variable and then print its length.
-
 
 // let institute:any = null;
 
 // institute= "VTTI";
 
 // const variableLength:number = (institute as string).length;
-
 
 // 12.Create a function that takes an input parameter of type unknown. Inside the function, implement type guards to check if the input is of type string or number and perform different operations based on the type.
 
@@ -191,13 +177,12 @@
 //         console.log("This is number type data");
 //     } else {
 //         console.log("It's not string or number type data");
-        
+
 //     }
 // }
 
 // typeBaseOperation("Hello");
 // typeBaseOperation(123);
-
 
 // 13. Create a generic function that takes an array of elements and returns the first element of the array. Add a constraint to ensure that the generic type can be compared using the > operator.
 
@@ -207,3 +192,21 @@
 
 // console.log(printFirstElement(["hello", "world"]));
 
+// 14. Create a function that takes two parameters: one can be either a string or number, and the other can be either a boolean or an array of strings. Implement logic in the function to perform different operations based on the types of the parameters.
+
+// const typeBaseOperation = (
+//   param1: string | number,
+//   param2: boolean | string[]
+// ): void => {
+//     if(typeof param1 === "string" && Array.isArray(param2)) {
+//         console.log([...param2, param1]);
+//     } else if(typeof param1 === "number" && Array.isArray(param2)) {
+//         console.log(`Param1 is number type data and Param2 is  string type array`);
+//     } else if(typeof param1 === "string" && typeof param2 === "boolean") {
+//         console.log(`Param1 is string type data and Param2 is boolean type data`);
+//     } else if(typeof param1 === "number" && typeof param2 === "boolean") {
+//         console.log(`Param1 is number type data and Param2 is boolean type data`);
+//     }
+// };
+
+// typeBaseOperation("arif", ["binu", "arif"])
