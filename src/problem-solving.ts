@@ -171,3 +171,30 @@
 // console.log(makeUppercase("Hello"));
 // console.log(makeUppercase(["Hello", "World"]));
 
+
+// 11. Declare a variable with an initial value of null and type it as string. Use type assertion to assign a string value to this variable and then print its length.
+
+
+// let institute:any = null;
+
+// institute= "VTTI";
+
+// const variableLength:number = (institute as string).length;
+
+
+// 12.Create a function that takes an input parameter of type unknown. Inside the function, implement type guards to check if the input is of type string or number and perform different operations based on the type.
+
+// const typeBaseOperation = (param:unknown):void => {
+//     if(typeof param === "string") {
+//         console.log("This is string type data");
+//     }else if(typeof param === "number") {
+//         console.log("This is number type data");
+//     } else {
+//         console.log("It's not string or number type data");
+        
+//     }
+// }
+
+// typeBaseOperation("Hello");
+// typeBaseOperation(123);
+
