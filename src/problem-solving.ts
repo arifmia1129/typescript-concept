@@ -115,12 +115,47 @@
 
 // 8. Create a base class called Shape with a method calculateArea that returns the area of the shape. Extend this class to create subclasses for specific shapes like Rectangle and Circle. Implement the calculateArea method in each subclass and test it with different dimensions.
 
-class Shape {
-    calculateArea(height:number, width:number):number{
-        return height * width;
-    }
-}
+// class Shape {
+//     calculateArea(height:number, width:number):number{
+//         return height * width;
+//     }
+// }
 
+// class SquareAre extends Shape {
+//     calculateArea(a:number): number {
+//         return a * a;
+//     }
+// }
+
+// 9. Define two interfaces: Car with properties like make, model, and year, and Driver with properties like name and licenseNumber. Create a function that takes objects of type Car and Driver and returns an object with the combined properties of both types.
+
+// interface Car{
+//     make:string;
+//     model:string;
+//     year:number;
+// }
+
+// interface Driver{
+//     name:string;
+//     licenseNumber:string;
+// }
+
+// const combineInfo = (carInfo:object, driverInfo:object):object => {
+//     return {...carInfo, ...driverInfo};
+// }
+
+// const carInfo:Car = {
+//     make:"Toyoto",
+//     model:"2015-n",
+//     year:2016
+// };
+
+// const driverInfo:Driver = {
+//     name:"Arif",
+//     licenseNumber:"arif-123"
+// }
+
+// console.log(combineInfo(carInfo, driverInfo));
 
 
 
