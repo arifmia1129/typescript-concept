@@ -198,3 +198,12 @@
 // typeBaseOperation("Hello");
 // typeBaseOperation(123);
 
+
+// 13. Create a generic function that takes an array of elements and returns the first element of the array. Add a constraint to ensure that the generic type can be compared using the > operator.
+
+// const printFirstElement = <T extends string | number> (param:T[]):T =>{
+//     return param[0];
+// }
+
+// console.log(printFirstElement(["hello", "world"]));
+
