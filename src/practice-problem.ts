@@ -86,4 +86,31 @@
 // console.log(sumOfArr(arrNumber));
 
 
+// 6.Create an interface called Person that includes properties for name (string), age (number), and email (string). Then create an array of Person objects and write a function that takes the array and a string email as parameters, and returns the Person object that matches the email or null if no match is found.
+
+// interface Person {
+//     name:string;
+//     age:number;
+//     email:string;
+// }
+
+// const personArr:Person[] = [
+//     {name:"Binu", age:21, email:"binu@gmail.com"},
+//     {name:"Arif", age:22, email:"arif@gmail.com"},
+//     {name:"Shahin", age:22, email:"shahin@gmail.com"}
+// ]
+
+// function findPerson(persons:Person[], email:string):Person | null {
+//     const person = persons.find(person => person.email === email);
+
+//     if(person) {
+//         return person;
+//     }else{
+//         return null;
+//     }
+// }
+
+// console.log(findPerson(personArr, "arif@gmail.com"));
+
+
 
