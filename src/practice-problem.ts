@@ -49,24 +49,24 @@
 // 4. Suppose you have an array of tuples, where each tuple represents a product and contains the product name, price, and quantity. Write a TypeScript function that calculates the total cost of all the products in the array, using a generic type for the tuple and a type alias for the array.
 
 
-type Products = [string, number, number][];
+// type Products = [string, number, number][];
 
-const products:Products = [
-    ["alu", 100, 12],
-    ["begun", 200, 12],
-    ["kola", 300, 12],
-    ["lau", 400, 12],
-]
+// const products:Products = [
+//     ["alu", 100, 12],
+//     ["begun", 200, 12],
+//     ["kola", 300, 12],
+//     ["lau", 400, 12],
+// ]
 
-const totalCost =  (products:Products):number => {
-    let totalCost:number = 0;
-    for(const [name, price, quantity] of products) {
-        totalCost = totalCost + (price *  quantity);
-    }
-    return totalCost;
-}
+// const totalCost =  (products:Products):number => {
+//     let totalCost:number = 0;
+//     for(const [name, price, quantity] of products) {
+//         totalCost = totalCost + (price *  quantity);
+//     }
+//     return totalCost;
+// }
 
-console.log(totalCost(products));
+// console.log(totalCost(products));
 
 
 
