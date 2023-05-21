@@ -210,3 +210,26 @@
 // };
 
 // typeBaseOperation("arif", ["binu", "arif"])
+
+// 15.Create a generic function called filterArray that takes an array of any type and a predicate function as parameters. The function should return a new array that contains only the elements for which the predicate function returns true. Ensure that the function is flexible enough to work with different types of arrays.
+
+// const isEven = (element:number):boolean => {
+//     if(element % 2 === 0){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+
+// const filterArray =<T> (arr:T[], func:Function):T[]=> {
+//     let newArr = [];
+//     for(const el of arr) {
+//         if(func(el)){
+//             newArr.push(el);
+//         }
+//     }
+//     return newArr;
+// }
+
+// console.log([1, 2, 3, 4, 9, 100], isEven);
+
