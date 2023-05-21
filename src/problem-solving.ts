@@ -105,12 +105,22 @@
 
 // 7.Define an enum called Color with values representing different colors (e.g., Red, Green, Blue). Create a function that takes a Color value as input and prints out a corresponding message (e.g., "You selected Red").
 
-type Color = "Red" | "Green" | "Blue";
+// type Color = "Red" | "Green" | "Blue";
 
-function checkColor(color:Color) {
-    console.log(`Your selected color is: ${color}`);
+// function checkColor(color:Color) {
+//     console.log(`Your selected color is: ${color}`);
+// }
+
+// checkColor("Red");
+
+// 8. Create a base class called Shape with a method calculateArea that returns the area of the shape. Extend this class to create subclasses for specific shapes like Rectangle and Circle. Implement the calculateArea method in each subclass and test it with different dimensions.
+
+class Shape {
+    calculateArea(height:number, width:number):number{
+        return height * width;
+    }
 }
 
-checkColor("Red");
+
 
 
