@@ -113,4 +113,21 @@
 // console.log(findPerson(personArr, "arif@gmail.com"));
 
 
+// 7. Create a TypeScript program that declares an array of numbers. Use the spread  operator to pass the elements of the array as arguments to a function that finds the minimum and maximum values of the array. Use destructuring to assign the minimum and maximum values to separate variables, and log them to the console.
+
+// const findMinMax = (...arr:number[]):number[]=>{
+//     let min = Math.min(...arr);
+//     let max = Math.max(...arr);
+//     return [min, max];
+// }
+
+// const arrNumber = [1, 2, 3, 4, 5,6];
+
+
+// const [minNum, maxNum] = findMinMax(...arrNumber);
+
+
+// console.log(`Minimum number is: ${minNum}\nMaximum number is:${maxNum}`);
+
+
 
